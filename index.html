@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="FORM2.css">
+    <link rel="icon" href="lion.png">
+</head>
+
+<body>           <!-- keno ado id='' bru bleh click kat text --> 
+    <div class="container">
+    <h1>Registration Form</h1>
+    <form action="" id="registration-form" on="return validateForm()">
+        <label for="fname">
+            First Name : <br>
+        </label>
+        <input type="text" id="fname" name="fname" placeholder="First Name" required>
+        <br>
+        <br>
+        <label for="lname">
+            Last Name : <br>
+        </label>
+        <input type="text" id="lname" placeholder="Last Name" required>
+        <br>
+        <br>
+        <label for="gender">Gender :</label> <br>
+        <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <br>
+        <br>
+        <label for="email">
+            Email Address : <br>
+        </label>
+        <input type="email" id="email" placeholder="Enter Your Email" required>
+        <br>
+        <br>
+        <label for="tel">
+            Contact No: <br>
+        </label>
+        <input type="tel" id="tel" placeholder="Phone Number" required>
+        <br>
+        <br>
+        <label for="date">
+            Date of Birth : <br>
+        </label>
+        <input type="date" id="date" required>
+        <br>
+        <br>
+        <label for="address">
+            Address : <br>
+        </label>
+        <input type="text" id="address" placeholder="Enter Your Address" required>
+        <br>
+        <br>
+        <div class="address-group">
+            <label for="postcode">Postcode:</label>
+            <input type="number" id="postcode" placeholder="Postcode" required>
+            <label for="city">City:</label>
+            <input type="text" id="city" placeholder="City" required>
+            <label for="state">State:</label>
+            <input type="text" id="state" placeholder="State" required>
+        </div>
+        <br>
+        <br>
+        <label for="qualification">Qualification:</label>
+        <select>
+            <option value="highschool">High School</option>
+            <option value="associate">Diploma</option>
+            <option value="bachelor">Degree</option>
+            <option value="master">Master</option>
+        </select>
+        <br>
+        <br>
+        <label for="courses">Course List:
+            <ul id="courses">
+                <li>
+                    <input type="checkbox" id="course1">
+                    <label for="course1">
+                        Mobile Application 
+                    </label>
+                </li>
+                <li>
+                    <input type="checkbox" id="course2" value="Course 2">
+                    <label for="course2">
+                        Cyber-Security
+                    </label>
+                </li>
+                <li>
+                    <input type="checkbox" id="course3" value="Course 3">
+                    <label for="course3">
+                        Embedded System
+                    </label>
+                </li>
+                <li>
+                    <input type="checkbox" id="course4" value="Course 4">
+                    <label for="course4">
+                        Sensor Technology
+                    </label>
+                </li>
+                <li>
+                    <input type="checkbox" id="course5" value="Course 5">
+                    <label for="course5">
+                        Web Development            
+                    </label>
+                </li>
+                <li>
+                    <input type="checkbox" id="otherCourse">
+                    <label for="otherCourse">
+                        Others :
+                    </label>
+                    <input type="text" id="otherCourseText" placeholder="Enter other course">
+                </li>
+            </ul>
+        </label>
+        <label for="image">
+        </label>
+        <input type="file" name="file" id="file" required>
+        <br>
+        <br>
+            <button type="submit" value="submit">
+                Register
+            </button>
+            <button type="reset" onclick="resetForm()">
+                Reset
+            </button>
+    </form>
+    </div>
+
+    <script>
+        function resetForm() {
+            document.getElementById("registration-form").reset();
+            alert("Form has been reset.");
+        }
+    </script>
+    
+</body>
+</html>
